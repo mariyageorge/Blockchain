@@ -7,11 +7,24 @@
 </head>
 <body>
     <div class="container">
-        <h1>Welcome Scholar</h1>
-        <input type="text" placeholder="Message">
-        <button onclick="requestHelp()">Request Help</button>
-        <button onclick="searchSponsors()">Search for Sponsors</button>
+        <header>
+            <h1>Welcome Scholar</h1>
+            <p>Empower your future with education!</p>
+        </header>
+        
+        <section class="request-help-card">
+            <h2>Request Help</h2>
+            <textarea placeholder="Describe the help you need..." id="help-message" rows="5"></textarea>
+            <button onclick="requestHelp()">Submit Request</button>
+        </section>
+
+        <section class="search-sponsors">
+            <h2>Search for Sponsors</h2>
+            <p>Find sponsors who can help fund your education.</p>
+            <button onclick="searchSponsors()">Search Sponsors</button>
+        </section>
     </div>
+
     <script src="script.js"></script>
 </body>
 </html>
