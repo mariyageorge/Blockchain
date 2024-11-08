@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login - EDUFUND</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Login</h1>
+        <p>Are you a Sponsor or Applicant?</p>
+        <button onclick="showApplicantLogin()">Applicant</button>
+        <button onclick="showSponsorLogin()">Sponsor</button>
+
+        <!-- Applicant Login -->
+        <div id="applicant-login" style="display:none;">
+            <input type="text" placeholder="Username" required>
+            <input type="password" placeholder="Password" required>
+            <button onclick="loginApplicant()">Login as Applicant</button>
+        </div>
+
+        <!-- Sponsor Login -->
+        <div id="sponsor-login" style="display:none;">
+            <input type="text" placeholder="Unique ID" required>
+            <input type="password" placeholder="Password" required>
+            <button onclick="loginSponsor()">Login as Sponsor</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

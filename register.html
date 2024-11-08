@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register - EDUFUND</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Register</h1>
+        <p>Are you a Sponsor or Applicant?</p>
+        <button onclick="showApplicantForm()">Applicant</button>
+        <button onclick="showSponsorForm()">Sponsor</button>
+
+        <!-- Applicant Form -->
+        <div id="applicant-form" style="display:none;">
+            <input type="text" placeholder="Name" required>
+            <input type="email" placeholder="Email" required>
+            <input type="text" placeholder="Username" required>
+            <input type="date" placeholder="Date of Birth" required>
+            <input type="password" placeholder="Password" required>
+            <input type="password" placeholder="Confirm Password" required>
+            <input type="file" id="proof-upload" required>
+            <button onclick="registerApplicant()">Register as Applicant</button>
+        </div>
+
+        <!-- Sponsor Form -->
+        <div id="sponsor-form" style="display:none;">
+            <input type="text" placeholder="Name" required>
+            <input type="email" placeholder="Email" required>
+            <input type="password" placeholder="Password" required>
+            <input type="password" placeholder="Confirm Password" required>
+            <button onclick="registerSponsor()">Register as Sponsor</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
